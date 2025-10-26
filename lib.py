@@ -493,9 +493,9 @@ def create_training_ui(train_dataset, test_dataset):
     weight_decay_widget = widgets.FloatSlider(
         value=5e-4,
         min=0.0,
-        max=0.01,
+        max=0.1,
         step=1e-4,
-        description="Weight Decay"
+        description="Weight Decay(L2)"
     )
     dropout_widget = widgets.Checkbox(
         value=False,
