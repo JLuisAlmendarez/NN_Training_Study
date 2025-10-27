@@ -14,5 +14,5 @@ env/
 # Mac
 .DS_Store
 
-# Carpeta de resultados
-results/
+# Ignore
+*.pth

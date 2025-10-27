@@ -1,0 +1,37 @@
+{
+    "model_name": "customcnn",
+    "optimizer": "SGD",
+    "nesterov_flag": false,
+    "lr": 0.0001,
+    "weight_decay": 0.0005,
+    "weight_init": "kaiming",
+    "dropout_rate": 0.0,
+    "label_smoothing": 0.0,
+    "lr_schedule": "constant+warmup",
+    "batch_size": 128,
+    "use_augment": false,
+    "protocol": "Fixed Epochs",
+    "wall_clock_budget_s": null,
+    "seed": 42,
+    "device": "mps",
+    "num_epochs_run": 5,
+    "total_train_time_s": 3134.394999265671,
+    "epoch_times_s": [
+        314.2060921192169,
+        828.9178051948547,
+        668.1426110267639,
+        647.5620858669281,
+        675.5664050579071
+    ],
+    "epoch_lrs": [
+        2e-05,
+        4e-05,
+        6.000000000000001e-05,
+        8e-05,
+        0.0001
+    ],
+    "best_val_acc": 0.46166666666666667,
+    "final_test_acc": 0.4275,
+    "final_test_loss": 1.667578813234965,
+    "model_file": "/Users/josealmendarez/Desktop/Lab2CNNModel/results/customcnn/exp_1/model.pth"
+}
