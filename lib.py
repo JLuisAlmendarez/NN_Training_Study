@@ -384,10 +384,10 @@ def train_model(model_name,
             if time.time() - start_time_global >= wall_clock_budget:
                 print(f"\n⏰ Wall-clock budget alcanzado ({wall_clock_budget}s). Deteniendo...")
                 break
+    test_loss_accum_final, test_correct_final, test_total_final = 0.0, 0, 1
     if best_model_state:
         model.load_state_dict(best_model_state)
         model.eval()
-        test_loss_accum_final, test_correct_final, test_total_final = 0.0, 0, 0
         with torch.no_grad():
             for images, labels in test_loader:
                 images, labels = images.to(device), labels.to(device)
